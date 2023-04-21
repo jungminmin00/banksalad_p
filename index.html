@@ -6,57 +6,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- link -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- script -->
 </head>
 <body>
 <div id="wrap">
-  <header>
-    <h1><a href="#"><img src="./images/logo.png" alt="로고"></a></h1>
-    <nav>
-      <h2 class="hide">메인내비게이션</h2>
-      <ul>
-        <li><a href="#">신용대출</a>
+  <div id="headerWrap">
+    <header>
+      <div>
+        <h1><a href="#"><img src="./images/logo.png" alt="로고"></a></h1>
+        <nav>
+          <h2 class="hide">메인내비게이션</h2>
           <ul>
-            <li><h3>최저금리 상품 찾기</h3></li>
-            <li><a href="#">전체</a></li>
-            <li><a href="#">1금융권</a></li>
-            <li><a href="#">2금융권</a></li>
-            <li><a href="#">무직자대출</a></li>
-            <li><a href="#">사업자대출</a></li>
-            <li><a href="#">저신용자대출</a></li>
-            <li><a href="#">직장인대출</a></li>
-            <li><a href="#">소액/비상금대출</a></li>
+            <!-- 1 -->
+            <li><a href="#">신용대출</a>
+              <ul>
+                <li><h3>최저금리 상품 찾기</h3></li>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">1금융권</a></li>
+                <li><a href="#">2금융권</a></li>
+                <li><a href="#">무직자대출</a></li>
+                <li><a href="#">사업자대출</a></li>
+                <li><a href="#">저신용자대출</a></li>
+                <li><a href="#">직장인대출</a></li>
+                <li><a href="#">소액/비상금대출</a></li>
+              </ul>
+            </li>
+            <!-- 2 -->
+            <li><a href="#">신용카드</a>
+              <ul>
+                <li><h3>최대 혜택 카드 찾기</h3></li>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">현대카드</a></li>
+                <li><a href="#">삼성카드</a></li>
+                <li><a href="#">KB국민카드</a></li>
+                <li><a href="#">롯데카드</a></li>
+                <li><a href="#">하나카드</a></li>
+                <li><a href="#">우리카드</a></li>
+              </ul>
+            </li>
+            <!-- 3 -->
+            <li><a href="#">예적금</a>
+              <ul>
+                <li><h3>최고 금리 예적금 찾기</h3></li>
+                <li><a href="#">정기예금</a></li>
+                <li><a href="#">적금</a></li>
+              </ul>
+            </li>
+            <!-- 4 -->
+            <li><a href="#">무료 건강 검사</a>
+              <ul>
+                <li><h3>무료 건강 검사</h3></li>
+                <li><a href="#">무료 유전자 검사</a></li>
+                <li><a href="#">무료 미생물 검사</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li><a href="#">신용카드</a>
-          <ul>
-            <li><h3>최대 혜택 카드 찾기</h3></li>
-            <li>전체</li>
-            <li>현대카드</li>
-            <li>삼성카드</li>
-            <li>KB국민카드</li>
-            <li>롯데카드</li>
-            <li>하나카드</li>
-            <li>우리카드</li>
-          </ul>
-        </li>
-        <li><a href="#">예적금</a>
-          <ul>
-            <li><h3>최고 금리 예적금 찾기</h3></li>
-            <li><a href="#">정기예금</a></li>
-            <li><a href="#">적금</a></li>
-          </ul>
-        </li>
-        <li><a href="#">무료 건강 검사</a>
-          <ul>
-            <li><h3>무료 건강 검사</h3></li>
-            <li><a href="#">무료 유전자 검사</a></li>
-            <li><a href="#">무료 미생물 검사</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- main -->
   <main>
     <!-- box01 -->
     <article id="box01">
@@ -65,77 +84,86 @@
           <ul class="all">
             <!-- 1 -->
             <li>
-              <figure>
-                <img src="./images/swiper01.png" alt="">
-                <figcaption>
-                  <p>이벤트 응모하고<br>카드 사용하면<br>최대 77만원 받아요!</p>
-                  <button>이벤트 보기</button>
-                </figcaption>
-              </figure>
+              <dl>
+                <dt><p>이벤트 응모하고<br>카드 사용하면<br>최대 77만원 받아요!</p></dt>
+                <dd><button>이벤트 보기</button></dd>
+              </dl>
             </li>
             <!-- 2 -->
             <li>
-              <figure>
-                <img src="./images/swiper02.png" alt="">
-                <figcaption>
-                  <p>대출 앞에 작아질 때!<br>뱅크샐러드 금융매칭</p>
-                  <button>내 최저금리 조회하기</button>
-                </figcaption>
-              </figure>
+              <dl>
+                <dt><p>대출 앞에 작아질 때!<br>뱅크샐러드 금융매칭</p></dt>  
+                <dd><button>내 최저금리 조회하기</button></dd>
+              </dl>
             </li>
             <!-- 3 -->
             <li>
-              <figure>
+              <dl>
+                <dt><p>금융을 내 편으로<br>뱅크샐러드</p></dt>
+                <dd><button>뱅크 샐러드 사용해보기</button></dd>
+              </dl>
+              <!-- <figure>
                 <img src="./images/swiper03.png" alt="">
                 <figcaption>
                   <p>금융을 내 편으로<br>뱅크샐러드</p>
                   <button>뱅크 샐러드 사용해보기</button>
                 </figcaption>
-              </figure>
+              </figure> -->
             </li>
           </ul>
+        </div>
+        <div class="subMenu">
+           <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+           </ul>
         </div>
       </div>
     </article>
     <!-- box02 -->
     <article id="box02">
       <div>
-        <h3></h3>
-        <!-- 1 -->
-        <dl>
-          <dt><img src="./images/box02_01.png" alt="img"></dt>
-          <dd>국내 최대 금융상품 데이터 금융 상품 데이터뿐만 아니라, 전월 실적, 한도 조건 등 복잡하고 어려운 금융상품의 각종 조건 데이터까지 모두 챙겼습니다.</dd>
-        </dl>
-        <!-- 2 -->
-        <dl>
-          <dt><img src="./images/box02_02.png" alt="img"></dt>
-          <dd>나만을 위한 금융매칭
-            수백만가지 경우의 수를 계산하는 추천 알고리즘이 나를 위한 맞춤 상품을 찾아드립니다.</dd>
-        </dl>
-        <!-- 3 -->
-        <dl>
-          <dt><img src="./images/box02_03.png" alt="img"></dt>
-          <dd>광고나 홍보 없음
-            뱅크샐러드의 추천에는 광고도, 홍보도 없습니다. 오직 객관적인 데이터만을 활용합니다.</dd>
-        </dl>
+        <h3><span>뱅크샐러드는 쉽고 정확하게 비교합니다.</span></h3>
+        <div>
+          <!-- 1 -->
+          <dl>
+            <dt><img src="./images/box02_01.png" alt="img"></dt>
+            <dd>국내 최대 금융상품 데이터 금융 상품 데이터뿐만 아니라, 전월 실적, 한도 조건 등 복잡하고 어려운 금융상품의 각종 조건 데이터까지 모두 챙겼습니다.</dd>
+          </dl>
+          <!-- 2 -->
+          <dl>
+            <dt><img src="./images/box02_02.png" alt="img"></dt>
+            <dd>나만을 위한 금융매칭
+              수백만가지 경우의 수를 계산하는 추천 알고리즘이 나를 위한 맞춤 상품을 찾아드립니다.</dd>
+          </dl>
+          <!-- 3 -->
+          <dl>
+            <dt><img src="./images/box02_03.png" alt="img"></dt>
+            <dd>광고나 홍보 없음
+              뱅크샐러드의 추천에는 광고도, 홍보도 없습니다. 오직 객관적인 데이터만을 활용합니다.</dd>
+          </dl>
+        </div>
       </div>
     </article>
+
     <!-- box03 -->
     <article id="box03">
       <div>
-        <p>구글 플레이 선정 2016년 `올해를 빛낸 혁신적인 앱` 수상 금융을 내 편으로 뱅크샐러드 다운로드</p>
-        <dl>  <!-- 구글 -->
-          <dt><p><i class="fa-brands fa-google-play"></i></p></dt>
-          <dd>Get It On</dd>
-          <dd>Google Play</dd>
-        </dl>
-        <dl>  <!-- 애플 -->
-          <dt><p><i class="fa-brands fa-apple"></i></p></dt>
-          <dd>Download on the</dd>
-          <dd>App Store</dd>
-        </dl>
+        <h3>구글 플레이 선정 2016년 `올해를 빛낸 혁신적인 앱` 수상 금융을 내 편으로 뱅크샐러드 다운로드</h3>
+        <p>
+          <button>  <!-- 구글 -->
+            <span>Get It On</span>
+            <span>Google Play</span>
+          </button>
+          <button>  <!-- 애플 -->
+            <span>Download on the</span>
+            <span>App Store</span>
+          </button>
+        </p>
       </div>
     </article>
+    
     <!-- box04 -->
     <article id="box04">
       <div>
@@ -220,41 +248,51 @@
         </div>
       </div>
     </article>
+    <!-- box05 -->
     <article id="box05">
-      <div class="top"><p>뱅크샐러드는 금융사와의 제휴를 통해 정확한 금융 정보를 전달합니다</p></div>
-      <div class="bottom"><p>뱅크샐러드는 IBK기업은행 카드 추천 솔루션 제작부터 KT CLiP 앱 카드데이터 제휴까지다양한 파트너와 협업을 진행했습니다. 국내 최대 금융 데이터와 고도화된 금융추천엔진을 통해 사업을 발전시키고 싶다면언제든 rainist@rainist.com으로 문의 주세요.</p></div>
+      <div class="top">
+        <p>뱅크샐러드는 금융사와의 제휴를 통해 정확한 금융 정보를 전달합니다</p>
+      <p>뱅크샐러드는 IBK기업은행 카드 추천 솔루션 제작부터 KT CLiP 앱 카드데이터 제휴까지다양한 파트너와 협업을 진행했습니다. 국내 최대 금융 데이터와 고도화된 금융추천엔진을 통해 사업을 발전시키고 싶다면언제든 rainist@rainist.com으로 문의 주세요.</p></div>
     </article>
   </main>
-  <div id="footer">
-    <aside>
-      <dl>
-        <dt><a href="#"><img src="./images/logo.png" alt="logo"></a></dt>
-        <dd>
-          <dl>  <!-- 구글 -->
-          <dt><p><i class="fa-brands fa-google-play"></i></p></dt>
-          <dd>Get It On</dd>
-          <dd>Google Play</dd>
-        </dl>
-        </dd>
-        <dd>
-          <dl>  <!-- 애플 -->
-          <dt><p><i class="fa-brands fa-apple"></i></p></dt>
-          <dd>Download on the</dd>
-          <dd>App Store</dd>
-        </dl>
-        </dd>
+  <!-- aside -->
+  <aside>
+    <div>
+    <dl>
+      <dt><a href="#"><img src="./images/logo.png" alt="logo"></a></dt>
+      <dd>
+        <p>
+          <button>  <!-- 구글 -->
+            <span>Get It On</span>
+            <span>Google Play</span>
+          </button>
+          <button>  <!-- 애플 -->
+            <span>Download on the</span>
+            <span>App Store</span>
+          </button>
+        </p>
       </dl>
-      <dl>
-        <dt>많이 찾는 서비스</dt>
-        <dd></dd>
+      </dd>
+      <dd>
+        <dl>  <!-- 애플 -->
+        <dt><p><i class="fa-brands fa-apple"></i></p></dt>
+        <dd>Download on the</dd>
+        <dd>App Store</dd>
       </dl>
-      <dl>
-        <dt>뱅크 샐러드</dt>
-        <dd></dd>
-      </dl>
-    </aside>
-    <footer><small>&copy; Banksalad Co., Ltd. All rights reserved.</small></footer>
+      </dd>
+    </dl>
+    <dl>
+      <dt>많이 찾는 서비스</dt>
+      <dd></dd>
+    </dl>
+    <dl>
+      <dt>뱅크 샐러드</dt>
+      <dd></dd>
+    </dl>
   </div>
+  </aside>
+  <footer><small>&copy; Banksalad Co., Ltd. All rights reserved.</small></footer>
+
 </div>
 </body>
 </html>
