@@ -1,0 +1,17 @@
+@mixin flex($justify:start, $wrap:nowrap, $direction:row, $item:stretch){
+    display: flex;
+    flex-direction:$direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    align-items: $item;
+}
+@mixin margin{
+    margin: 0 auto;
+}
+@mixin center{
+    text-align: center;
+}
+@mixin border($radius: 0, $color: #fff){
+    border: 1px solid $color;
+    border-radius: $radius;
+}

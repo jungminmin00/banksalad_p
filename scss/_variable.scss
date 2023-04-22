@@ -1,0 +1,30 @@
+// size
+$size-full: 100%;
+$size-content: 1170px;
+$size-basic: 10px;
+// font : 12 14 15 16 18 20 50
+$font-small: 12px;
+$font-middle: 14px;
+$font-large: 16px;
+// color: c9c9c9 fbfbfb f0f6f8 6b7274 888 777
+$color-white:#fff;
+$color-black:#000;
+$color-gray:#888;
+$color-mint:rgb(187, 255, 232);
+$color-violet:rgb(204, 130, 238);
+
+// 단축형
+$full: $size-full;
+$content: $size-content;
+$basic: $size-basic;
+// 
+$small: $font-small;
+$middle: $font-middle;
+$large: $font-large;
+$weight: bold;
+// 
+$white: $color-white;
+$black: $color-black;
+$gray: $color-gray;
+$mint: $color-mint;
+$violet: $color-violet;
