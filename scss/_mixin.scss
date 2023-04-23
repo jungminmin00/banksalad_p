@@ -1,4 +1,4 @@
-@mixin flex($justify:start, $wrap:nowrap, $direction:row, $item:stretch){
+@mixin layout($justify:start, $wrap:nowrap, $direction:row, $item:stretch){
     display: flex;
     flex-direction:$direction;
     justify-content: $justify;

@@ -1,3 +1,26 @@
 @use './_variable.scss' as *;
 @use './_mixin.scss' as *;
 @use './_common.scss' as *;
+
+
+/* aside */
+aside{
+    >div{
+        width: $content;
+        @include margin;
+        padding: $basic*6;
+        @include layout($justify:space-around);
+        >dl{
+            width: 33.33333%;
+            color: $gray;
+            line-height: 25px;
+            margin-bottom: $basic*4;
+            >dt{
+                font-size: $large;
+                font-weight: bold;
+                margin-bottom: $basic*2;
+            }
+        }
+    }
+    
+}

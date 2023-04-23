@@ -2,6 +2,9 @@
 @use './_mixin.scss' as *;
 @use './_common.scss' as *;
 
+/* 1170px */
+
+body{}
 #wrap{position: relative;}
 #headerWrap{
     width: $full;
@@ -10,48 +13,49 @@
     position: absolute;
     background-color: $white;
 }
-header>div{
-    width: $content;
-    @include margin;
-    padding: $basic*2 0;
-    position: relative;
-    @include flex($justify:space-between, $item:center);
-    >nav{
-        a{color: $black;}
-        >ul{
-            @include flex;
-            &:hover>li>ul{
-                @include flex($wrap:wrap, $direction:column);
-                position: absolute;
-                left:0; top: $basic*10;
-                width: $full;
-            }
-            >li{
-                padding-left: 35px;
-                @include flex;
-                &:nth-child(2)>ul{left: 26%;}
-                &:nth-child(3)>ul{left: 51%;}
-                &:nth-child(4)>ul{left: 76%;}
-                >a{
-                    font-size: $middle;
-                    font-weight: $weight;
-                }
-                >ul{
-                    @include flex;
-                    font-size: $middle;
-                    >li{
-                        margin-bottom: $basic;
-                        color: $black;
-                        &:first-child{margin-bottom: $basic*2;}
-                        >h3{
-                            font-size: $large;
-                            color: $gray;
-                            font-weight: $weight;
+/* header{background-color: pink;} */
+header{
+    >div{
+        width: $content;
+        margin: 0 auto;
+        padding: $basic*2 0;
+        @include layout($justify:space-between, $item:center);
+        position: relative;
+        >nav{
+            a{color: $black;}
+            >ul{
+                @include layout;
+                >li{
+                    padding-left: 35px;
+                    @include layout;
+                    // &:nth-child(2)>ul{left: 26%;}
+                    // &:nth-child(3)>ul{left: 51%;}
+                    // &:nth-child(4)>ul{left: 76%;}
+                    >a{
+                        font-size: $middle;
+                        font-weight: bold;
+                    }
+                    >ul{
+                        display: none;
+                        >li{
+                            margin-bottom: $basic;
+                            color: $black;
+                            &:first-child{margin-bottom: $basic*2;}
+                            >h3{
+                                font-size: $large;
+                                color: $gray;
+                                font-weight: bold;
+                            }
                         }
                     }
                 }
+                &:hover>li>ul{
+                    @include layout($wrap:wrap, $direction:column);
+                    position: absolute;
+                    left:0; top: $basic*10;
+                    width: $full;
+                }
             }
         }
-        
     }
 }

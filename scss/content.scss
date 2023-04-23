@@ -1,3 +1,233 @@
 @use './_variable.scss' as *;
 @use './_mixin.scss' as *;
 @use './_common.scss' as *;
+
+#box01{
+    padding-top: 66px;
+    width: $full;
+    >.gallery{
+        width: $full;
+        position: relative;
+        >.show{
+            width: $full;
+            overflow: hidden;
+            >.all{
+                display: flex;
+                width: 300%;
+                >li{
+                    width: $full;
+                    height: 480px;
+                    background:  $mint url('../images/swiper01.png') no-repeat right 500px center;
+                    background-size: 500px;
+                    &:nth-child(2){background:  $mint url('../images/swiper02.png') no-repeat right 300px center;}
+                    &:nth-child(3){background:  $mint url('../images/swiper03.png') no-repeat right center;}
+                    >dl{
+                        width: $content;
+                        margin: 0 auto;
+                        padding-top: 100px;
+                        >dt{
+                            font-size: 50px;
+                            font-weight: bold;
+                            font-family: 'Noto Sans KR', sans-serif;
+                            margin-bottom: $basic*5;
+                        }
+                        >dd{
+                            >button{
+                                @include layout($justify:center, $item:center);
+                                padding: $basic $basic*3;
+                                border: none;
+                                border-radius: $basic*2;
+                                font-size: $large;
+                                color: $white;
+                                font-weight: bold;
+                                background-color: $violet;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .subMenu{
+        position: absolute;
+        width: 150px;
+        left: 50%;
+        margin-left: -75px;
+        bottom: $basic*2;
+        >ul{
+            display: flex;
+            justify-content: space-between;
+            >li{
+                display: block;
+                width: $basic*3;
+                height: $basic;
+                background-color: #78eeb7;
+                border-radius: 5px;
+                &:hover{ width: $basic*6; }
+            }
+        }
+    }
+}
+
+
+/* box02 */
+#box02{
+    padding-top: $basic*6;
+    padding-bottom: $basic*8;
+    >div{
+        width: $content;
+        @include margin;
+        >div{
+            @include layout($wrap:nowrap, $justify:space-around);
+            >dl{
+                /* width: 33.333333%; */
+                @include center;
+                >dt{margin-bottom: $basic*2;}
+                >dd{
+                    width: 200px;
+                    font-size: 15px;
+                    line-height: $basic*2;
+                    word-break: keep-all;
+                }
+            }
+        }
+    }
+}
+article{
+    >div{
+        >h3{
+            margin-bottom: $basic*5;
+            font-size: 20px;
+            font-weight: bold;
+            color: $black;
+            >span{
+                font-weight: bold;
+                padding-bottom: $basic;
+                border-bottom: 4px solid $gray; 
+            }
+        }
+    }
+}
+
+
+/* box03 */
+#box03{
+    background: url('../images/box03_bg.png') no-repeat left top;
+    background-size: $full;
+    padding: 150px 0;
+    >div{
+        width: $content;
+        @include margin;
+        >h3{
+            width: 350px;
+            line-height: 25px;
+            font-size: $large;
+            font-weight: bold;
+            color: $white;
+            margin-bottom: 15px;
+        }
+        >p{
+            @include layout($justify:space-between);
+            width: 300px;
+        }
+    }
+}
+.google{
+    background: $black url('../images/google_store.png') no-repeat left 10px center;
+    background-size: $basic*3;    
+    width: $basic*13;
+    height: $basic*5;
+    @include layout($justify:center, $item:end, $direction:column);
+    border: 1px solid $white;
+    color: $white;
+    border-radius: $basic;
+    padding: 0 $basic;
+    font-weight: bold;
+}
+.apple{
+    background: $black url('../images/app_store.png') no-repeat left 10px center;
+    width: 158px;
+    background-size: $basic*3;
+    height: $basic*5;
+    @include layout($justify:center, $item:end, $direction:column);
+    border: 1px solid $white;
+    color: $white;
+    border-radius: $basic;
+    padding: 0 $basic;
+    font-weight: bold;
+}
+
+
+/* box04 */
+#box04{
+    padding: $basic*6 0 $basic*8 0;
+    position: relative;
+    >p{
+        @include layout($justify:center, $item:center);
+        position: absolute;
+        width: $basic*4;
+        height: $basic*4;
+        border: 1px solid $gray;
+        top: 50%;
+        margin-top: -20px;
+    }
+    >.prev{left: $basic*10;}
+    >.next{right: $basic*10;}
+    >div{
+        width: $content;
+        @include margin;
+        >.gallery{
+            width: $full;
+            >.show{
+                width: $full;
+                overflow: hidden;
+                >.all{
+                    @include layout;
+                    width: 150%;
+                    >li{
+                        width: 25%;
+                        >figure{
+                            width: 255px;
+                            @include margin;
+                            border: 1px solid $gray;
+                            >img{
+                                width: $full;
+                                height: $basic*16;
+                                margin-bottom: $basic;
+                            }
+                            >figcaption{
+                                >dl{
+                                    margin-left: $basic;
+                                    margin-bottom: $basic*3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* box05 */
+#box05{
+    >div{
+        >p{
+            @include center;
+            line-height: 25px;
+            &:first-child{
+                width: $full;
+                background-color: #fbfbfb;
+                padding: $basic*5 0;
+                font-size: $large;
+            }
+            &:last-child{
+                width: 100%;
+                background-color: #f0f6f8;
+                padding: $basic*3 0;
+                font-size: $middle;
+            }
+        }
+    }
+}
