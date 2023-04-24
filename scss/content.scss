@@ -5,6 +5,7 @@
 #box01{
     padding-top: 66px;
     width: $full;
+    z-index: 100;
     >.gallery{
         width: $full;
         position: relative;
