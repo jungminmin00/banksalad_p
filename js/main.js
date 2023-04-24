@@ -1,5 +1,7 @@
 import $ from "jquery";
+
 $(function(){
+
     // header nav
     $('header nav').on('mouseenter', function(){
         $('header ul>li>ul').css('display', 'inline-block');
@@ -14,7 +16,25 @@ $(function(){
         return false;
     });
 
+    // box04 - gallery
+    // 버튼 클릭시 애니로 돌아가게 만들기
+    let liWidth = $('#box04 .all>li').width();
+    $('#box04 .all').css('margin-left','-='+liWidth+'px');  // 준비하고 시작해야 함
+    $('#box04 .all>li:last').prependTo('#box04 .all');
+    $('.prev').on('click', function(){
+        $('#box04 .all').animate({marginLeft:'-='+liWidth+'px'}, function(){
+            $('#box04 .all>li:first').appendTo('#box04 .all');
+            $('#box04 .all').css('margin-left', '-'+liWidth+'px');
+        });
+    });
+    $('.next').on('click', function(){
+        $('#box04 .all').animate({marginLeft:'+='+liWidth+'px'}, function(){
+            $('#box04 .all>li:last').prependTo('#box04 .all');
+            $('#box04 .all').css('margin-left', '-'+liWidth+'px');
+        });
+    });
 
-    // box01 - gallery
-    
-})
+
+
+// 
+});

@@ -200,6 +200,11 @@ article{
                                 >dl{
                                     margin-left: $basic;
                                     margin-bottom: $basic*3;
+                                    dt{
+                                        font-size: $middle;
+                                        margin-bottom: $basic;
+                                    }
+                                    dd{font-size: $small;}
                                 }
                             }
                         }
