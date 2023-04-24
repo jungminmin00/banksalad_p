@@ -16,6 +16,17 @@ $(function(){
         return false;
     });
 
+
+// box01 - gallery : 자동
+let fullWidth = $('#box01 .all>li').width();
+$('#box01')
+setInterval(function(){
+    $('#box01 .all').animate({marginLeft:'-='+fullWidth+'px'}, function(){
+        $('#box01 .all>li:first').appendTo('#box01 .all');
+        $('#box01 .all').css('margin-left', '-'+fullWidth+'px');
+    });
+}, 3000);
+
     // box04 - gallery
     // 버튼 클릭시 애니로 돌아가게 만들기
     let liWidth = $('#box04 .all>li').width();
