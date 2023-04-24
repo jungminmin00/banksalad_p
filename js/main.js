@@ -19,12 +19,16 @@ $(function(){
 
 // box01 - gallery : 자동
 let fullWidth = $('#box01 .all>li').width();
-$('#box01')
+$('#box01 .all').css('margin-left','-='+fullWidth+'px');
+$('#box01 .all>li:last').prependTo('#box01 .all');
 setInterval(function(){
     $('#box01 .all').animate({marginLeft:'-='+fullWidth+'px'}, function(){
         $('#box01 .all>li:first').appendTo('#box01 .all');
         $('#box01 .all').css('margin-left', '-'+fullWidth+'px');
     });
+    for(let i = 1; i<=3; i++){
+        $('#box .subMenu>ul>li:nth-child('+i+')').css('width', '60px');
+    }
 }, 3000);
 
     // box04 - gallery
