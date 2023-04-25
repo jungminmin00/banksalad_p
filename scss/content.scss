@@ -16,12 +16,20 @@
                 display: flex;
                 width: 300%;
                 >li{
-                    width: $full;
+                    width: 33.33333%;   // 사이즈 주의하기
                     height: 480px;
-                    background:  $mint url('../images/swiper01.png') no-repeat right 500px center;
-                    background-size: 500px;
-                    &:nth-child(2){background:  $mint url('../images/swiper02.png') no-repeat right 300px center;}
-                    &:nth-child(3){background:  $mint url('../images/swiper03.png') no-repeat right center;}
+                    &.slide01{
+                        background:  $mint url('../images/swiper01.png') no-repeat right 500px center;
+                        background-size: 500px;
+                    }
+                    &.slide02{
+                        background:  $mint url('../images/swiper02.png') no-repeat right 300px center;
+                        background-size: 750px;
+                    }
+                    &.slide03{
+                        background:  $mint url('../images/swiper03.png') no-repeat right 100px center;
+                        background-size: 1500px;
+                    }
                     >dl{
                         width: $content;
                         margin: 0 auto;
@@ -64,7 +72,7 @@
                 height: $basic;
                 background-color: #78eeb7;
                 border-radius: 5px;
-                &:hover{ width: $basic*6; }
+                // &:hover{ width: $basic*6; }
             }
         }
     }
@@ -144,6 +152,7 @@ article{
     border-radius: $basic;
     padding: 0 $basic;
     font-weight: bold;
+    cursor: pointer;
 }
 .apple{
     background: $black url('../images/app_store.png') no-repeat left 10px center;
@@ -156,6 +165,7 @@ article{
     border-radius: $basic;
     padding: 0 $basic;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
