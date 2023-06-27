@@ -38,7 +38,7 @@ $(function(){
     });
     // 타이머 함수
     function timer(){
-        str = setInterval(ani, 1500);
+        str = setInterval(ani, 2500);
     }
     function stop(){
         clearInterval(str);

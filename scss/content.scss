@@ -19,15 +19,15 @@
                     width: 33.33333%;   // 사이즈 주의하기
                     height: 480px;
                     &.slide01{
-                        background:  $mint url('../images/swiper01.png') no-repeat right 500px center;
+                        background:  $mint url('../images/swiper01.png') no-repeat right 300px center;
                         background-size: 500px;
                     }
                     &.slide02{
-                        background:  $mint url('../images/swiper02.png') no-repeat right 300px center;
+                        background:  $mint url('../images/swiper02.png') no-repeat right 100px center;
                         background-size: 750px;
                     }
                     &.slide03{
-                        background:  $mint url('../images/swiper03.png') no-repeat right 100px center;
+                        background:  $mint url('../images/swiper03.png') no-repeat right 0px center;
                         background-size: 1500px;
                     }
                     >dl{
